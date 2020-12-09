@@ -10,7 +10,6 @@ var cons = require("consolidate");
 var csrfProtection = csrf({ cookie: true });
 app.use(cookieParser());
 
-// app.use(csrf());
 app.engine("hbs", cons.handlebars);
 
 // it defaults to 'jade'
